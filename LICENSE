@@ -1,0 +1,189 @@
+# MCPB Launcher License v1.0
+
+**Copyright (c) 2026 Payam**
+
+## 1. Definitions
+
+For purposes of this License:
+
+* **"Software"** means the MCPB Launcher software and its source code, including all files distributed by the copyright holder under this License.
+* **"Original Software"** means the Software as originally distributed by Payam.
+* **"Derivative Work"** means any work based upon, incorporating, modifying, adapting, translating, or otherwise derived from the Original Software or a substantial portion of it.
+* **"You"** means any person or legal entity exercising rights under this License.
+* **"Source Code"** means the preferred form of the Software for making modifications, including source files, build scripts, configuration required to build the Software, and other files reasonably necessary to reproduce the Software.
+
+## 2. Grant of Rights
+
+Subject to the conditions of this License, Payam grants You a worldwide, royalty-free, non-exclusive license to:
+
+1. use the Software for any purpose;
+2. study the Software;
+3. copy the Software;
+4. modify the Software;
+5. create Derivative Works;
+6. distribute the Original Software; and
+7. distribute Derivative Works.
+
+You may charge money for copies, support, hosting, or other services involving the Software.
+
+No permission is granted to use Payam's name, trademarks, logos, or other branding to imply endorsement of Your Derivative Work except as expressly permitted by this License.
+
+## 3. Source Code Requirement
+
+If You distribute, publish, or otherwise make a Derivative Work available to another person in executable, binary, or other non-source form, You must make the complete corresponding Source Code of that Derivative Work available to the recipients at no additional charge.
+
+The Source Code must contain the modifications necessary to reproduce the distributed version.
+
+You may satisfy this requirement by:
+
+* providing the Source Code together with the Derivative Work;
+* providing a publicly accessible download location containing the Source Code; or
+* providing another reasonable means through which recipients can obtain the complete Source Code.
+
+A specific hosting service, including GitHub, is recommended but is **not required** by this License.
+
+## 4. Modification Notice
+
+If You distribute a modified version of the Software, You must clearly state that You modified the Software.
+
+The notice must identify the approximate date of the modification and must not falsely represent Your modified version as the Original Software.
+
+For example:
+
+> This software is a modified version of MCPB Launcher.
+
+## 5. Required Attribution
+
+Every Derivative Work distributed under this License must retain an attribution to the original author:
+
+> **Original MCPB Launcher by Payam**
+
+The attribution must identify **Payam** as the original author of MCPB Launcher.
+
+You may use equivalent wording that clearly communicates the same attribution.
+
+## 6. Visible Attribution in Executable Versions
+
+If You distribute an executable, binary, packaged application, launcher, or other end-user version of a Derivative Work, the attribution required by Section 5 must be visibly presented to the user within the application.
+
+The attribution must be reasonably accessible and readable by an ordinary user.
+
+For a graphical application, acceptable locations include, but are not limited to:
+
+* an About screen;
+* a Credits screen;
+* a Legal or License screen;
+* an application information screen; or
+* another clearly accessible in-application location.
+
+This requirement applies **even if You completely replace, redesign, or remove the original MCPB Launcher user interface**.
+
+Replacing the original interface does not remove the obligation to provide the required attribution.
+
+## 7. No Removal of Attribution
+
+You may not remove, obscure, hide, or intentionally make inaccessible the attribution to Payam required by this License.
+
+You may redesign the user interface, change the application's appearance, rename Your Derivative Work, or add Your own branding, provided that the required attribution remains present and reasonably accessible.
+
+## 8. No Endorsement
+
+Nothing in this License grants You permission to claim or imply that Payam endorses, sponsors, maintains, or is otherwise affiliated with Your Derivative Work unless Payam has separately given You written permission to make such a claim.
+
+You may state that Your software is based on, derived from, or modified from MCPB Launcher when such statements are accurate.
+
+## 9. License Preservation
+
+When distributing the Software or a Derivative Work, You must provide a copy of this License or a clear reference to the version of this License governing the distributed work.
+
+You may not impose additional restrictions that prevent recipients from exercising the rights granted by this License with respect to the portions of the work covered by this License.
+
+## 10. Contributions
+
+Contributions submitted to the Original Software are accepted under the terms of this License unless otherwise agreed in writing by the copyright holder and the contributor.
+
+Contributors retain copyright in their original contributions to the extent permitted by applicable law.
+
+By submitting a contribution for inclusion in the Original Software, the contributor grants the copyright holder permission to distribute that contribution as part of the Software under this License.
+
+## 11. Third-Party Software
+
+This License applies only to the Software and portions of Derivative Works that are legally controlled by the copyright holder or contributors and licensed under this License.
+
+Third-party libraries, assets, code, trademarks, services, and other materials remain subject to their respective licenses and terms.
+
+You are responsible for complying with applicable third-party licenses when redistributing a Derivative Work.
+
+## 12. Trademarks and Branding
+
+This License does not grant permission to use trademarks, logos, names, or other branding belonging to Payam except where such use is necessary to accurately describe the origin or relationship of the Software.
+
+You may identify Your work as a derivative or fork of MCPB Launcher, provided that You do not imply endorsement by Payam.
+
+## 13. Termination
+
+The rights granted by this License automatically terminate if You materially violate its terms.
+
+Rights may be reinstated if the violation is completely remedied within a reasonable period after You become aware of the violation, unless Payam has expressly terminated the rights in writing or applicable law provides otherwise.
+
+Termination does not affect rights that were validly granted to recipients who received the Software or a Derivative Work before termination, except to the extent permitted by applicable law.
+
+## 14. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL PAYAM OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 15. Copyright
+
+Copyright in the Original Software remains with its respective copyright holders.
+
+The primary copyright notice for the Original Software is:
+
+> Copyright (c) 2026 Payam
+
+You must not remove existing copyright notices from the Original Software.
+
+## 16. Enforcement
+
+Failure to comply with the conditions of this License means that the permissions granted by this License may terminate or otherwise cease to apply to the violating use, modification, or distribution, subject to applicable law.
+
+The copyright holder reserves all rights and remedies available under applicable law.
+
+## 17. Acceptance
+
+By exercising rights granted by this License, including copying, modifying, distributing, or creating a Derivative Work from the Software, You agree to comply with the terms of this License.
+
+## 18. Third-Party Services and Content
+
+MCPB Launcher may communicate with third-party services, including services operated by Mojang AB or Microsoft Corporation, to retrieve metadata, version information, Java runtimes, or other content required by the launcher.
+
+MCPB Launcher does not include Minecraft game files in its source-code distribution. Content obtained through third-party services is not licensed under this License and remains subject to the terms, licenses, and other applicable conditions governing that content.
+
+This License grants rights only to the original source code and other material that the copyright holder has the legal right to license.
+
+MCPB Launcher is an independent third-party project and is not affiliated with, endorsed by, sponsored by, or officially associated with Mojang AB, Microsoft Corporation, Xbox, or Minecraft.
+
+## 19. Reservation of Rights
+
+All rights not expressly granted under this License are reserved by the respective copyright holders.
+
+## 19. User Responsibility and Game Ownership
+
+MCPB Launcher is a software tool and does not grant any license or right to use Minecraft or any other third-party software or content.
+
+You are solely responsible for ensuring that You have legally obtained and are authorized to use any game, software, account, content, or service accessed through MCPB Launcher.
+
+If You use MCPB Launcher during development, testing, or production without owning or otherwise having the necessary legal authorization to use Minecraft or other third-party content, You assume full responsibility for that use and for any resulting claims, account actions, damages, losses, liabilities, or legal consequences arising from Your conduct.
+
+Nothing in this License authorizes or permits unauthorized access to, downloading of, distribution of, or use of Minecraft or other third-party content.
+
+Payam and contributors are not responsible for a user's failure to obtain the necessary rights, licenses, permissions, or authorizations required to use third-party software or services, except to the extent that such responsibility cannot legally be excluded under applicable law.
+
+You are responsible for complying with all applicable laws, regulations, contracts, terms of service, and licenses governing Your use of third-party software and services, including those applicable in Your country or jurisdiction.
+
+---
+
+**MCPB Launcher License v1.0**
+
+Copyright (c) 2026 Payam

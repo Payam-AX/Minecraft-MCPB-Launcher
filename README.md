@@ -22,3 +22,11 @@
 
 
 </details>
+
+License
+
+MCPB Launcher is licensed under the MCPB Launcher License v1.0.
+
+See LICENSE for the full license terms.
+
+By using, modifying, or distributing MCPB Launcher, you agree to the terms of the license.
