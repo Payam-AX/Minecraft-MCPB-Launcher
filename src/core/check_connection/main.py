@@ -16,25 +16,27 @@ def connection_info():
     url1 = "https://piston-meta.mojang.com/mc/game/version_manifest.json"
     url2 = "https://launchermeta.mojang.com/mc/game/version_manifest.json"
     url3 = "https://launchermeta.mojang.com/mc/game/version_manifest_v2.json"
+    offline = False
+    log = []
     try:
-        print("getting url 1")
+        log.append("getting url 1")
         json_data = fetch_json_data(url)
     except:
-        print("failed to fetch url 1")
+        log.append("failed to fetch url 1")
         try:
-            print("getting url 2")
+            log.append("getting url 2")
             json_data = fetch_json_data(url1)
         except:
-            print("failed to fetch url 2")
+            log.append("failed to fetch url 2")
             try:
-                print("getting url 3")
+                log.append("getting url 3")
                 json_data = fetch_json_data(url2)
             except:
-                print("failed to fetch url 3")
+                log.append("failed to fetch url 3")
                 try:
-                    print("getting url 4")
+                    log.append("getting url 4")
                     json_data = fetch_json_data(url3)
                 except:
-                    print("failed to fetch url 4")
+                    log.append("failed to fetch url 4")
                     offline = True
-    return offline
+    return offline,log

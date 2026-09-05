@@ -1,8 +1,9 @@
 import core.check_connection.main as connection_info
 
 class game():
-    def __init__(self,connection):
-        self.connection = connection
+    def __init__(self):
+        self.connection = None
         pass
     def connection_result(self):
-        self.connection = connection_info.isonline
+        self.connection,log = connection_info.connection_info()
+        return self.connection,log
