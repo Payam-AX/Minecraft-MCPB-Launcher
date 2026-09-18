@@ -74,6 +74,7 @@ def get_json():
             json_data = fetch_json_data(url)
             break
         except:
+            json_data = {}
             log.append("failed to fetch url "+str(i))
             if url == urls[len(urls)-1]:
                     online = False
