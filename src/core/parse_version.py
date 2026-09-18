@@ -55,4 +55,4 @@ def select_version(selected_type,json_data,path_game = "./"):
         existing_versions = sorted(set(entry["id"] for entry in filtered_entries))
         # cprint(existing_versions)
     
-    return existing_versions,log
+    return existing_versions,log,filtered_entries

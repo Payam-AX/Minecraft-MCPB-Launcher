@@ -1,5 +1,11 @@
+import os, requests
 import core.core as mc
 from core.parse_version import select_version,types
+
+try:
+    import json
+except ImportError:
+    import simplejson as json
 
 try:
     from cli.cprint import cprint
@@ -12,6 +18,7 @@ except NameError:
     pass
 
 def run():
+    path_game = "./"
     z = mc.game()
     list_versions, online ,log = z.get_versions_json()
     cprint(online)
@@ -26,7 +33,7 @@ def run():
         if selected_type not in available_types:
             cprint("Invalid type!")
             
-    available_versionsintype,log = select_version(selected_type,list_versions)
+    available_versionsintype,log,json_entries = select_version(selected_type,list_versions)
     if available_versionsintype == "":
         cprint(log)
         return
@@ -42,3 +49,17 @@ def run():
         
         
         cprint(selected_version)
+        
+        if json_entries:
+            if not os.path.exists(os.path.normpath(path_game+"./versions/"+selected_version["id"]+"/"+selected_version["id"]+".json")):
+                if not os.path.exists(os.path.normpath(path_game+"./versions/"+selected_version["id"])):
+                    os.makedirs(os.path.normpath(path_game+"./versions/"+selected_version["id"]))
+                selected = [entry for entry in json_entries if entry["id"] == selected_version]
+                # print(selected[0]["url"])
+                
+                response = requests.get(selected[0]["url"])
+                response.raise_for_status()
+                version = response.json()
+                with open(os.path.normpath(path_game+"./versions/"+selected_version["id"]+"/"+selected_version["id"]+".json"), "w") as file:
+                    json.dump(version, file, indent=4)
+                print(version["id"])
