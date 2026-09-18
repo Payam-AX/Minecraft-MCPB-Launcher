@@ -1,4 +1,7 @@
-import core.check_connection.main as connection_info
+try:
+    import core.check_connection as connection_info
+except ImportError:
+    import check_connection as connection_info
 
 class game():
     def __init__(self):
