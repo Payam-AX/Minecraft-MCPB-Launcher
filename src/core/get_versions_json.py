@@ -1,14 +1,11 @@
 import requests, sys, socket
 
-try:
-    from core.cprint import cprint
-except ImportError:
-    from cprint import cprint
+from cli.cprint import cprint
     
 try:
     import json
 except ImportError:
-    import simplejson
+    import simplejson as json
 
 if not hasattr(socket, "create_connection"):
 
@@ -41,7 +38,7 @@ if not hasattr(socket, "create_connection"):
 
     socket.create_connection = create_connection
 
-def fetch_json_data(url,version):
+def fetch_json_data(url):
     """Fetch JSON data from the given URL."""
     
     headers = {
@@ -49,12 +46,9 @@ def fetch_json_data(url,version):
     }
     response = requests.get(url,headers=headers, timeout=10)
     response.raise_for_status()
-    if version != "old":
-        return response.json()
-    else:
-        return simplejson.loads(response.content)
+    return json.loads(response.content)
 
-def connection_info():
+def get_json():
     https_urls = [
         "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
         "https://piston-meta.mojang.com/mc/game/version_manifest.json",
@@ -67,13 +61,11 @@ def connection_info():
         "http://launchermeta.mojang.com/mc/game/version_manifest.json",
         "http://launchermeta.mojang.com/mc/game/version_manifest_v2.json",
     ]
-    offline = False
+    online = True
     log = []
     if sys.version_info[0]==3 or (sys.version_info[0] == 2 and sys.version_info[1] == 7):
         urls = https_urls
-        version = "new"
     else:
-        version = "old"
         cprint("fallback to http")
         urls = http_urls
     i=0
@@ -81,11 +73,11 @@ def connection_info():
         i+=1
         try:
             log.append("getting url "+str(i))
-            json_data = fetch_json_data(url,version)
+            json_data = fetch_json_data(url)
             break
         except:
             log.append("failed to fetch url "+str(i))
             if url == urls[len(urls)-1]:
-                    offline = True
+                    online = False
             continue
-    return offline,log
+    return json_data,online,log

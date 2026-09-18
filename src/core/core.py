@@ -1,12 +1,12 @@
 try:
-    import core.check_connection as connection_info
+    import core.get_versions_json as get_json
 except ImportError:
-    import check_connection as connection_info
+    import get_versions_json as get_json
 
 class game():
     def __init__(self):
-        self.connection = None
+        self.connection_status = None
         pass
-    def connection_result(self):
-        self.connection,log = connection_info.connection_info()
-        return self.connection,log
+    def get_versions_json(self):
+        version_json,self.connection_status,log = get_json.get_json()
+        return version_json,self.connection_status,log
