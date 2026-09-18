@@ -4,11 +4,16 @@ try:
 except ImportError:
     from select_version import select_version
 
+try:
+    from cli.cprint import cprint
+except ImportError:
+    from cprint import cprint
 
 def run():
     z = mc.game()
     list_versions, online ,log = z.get_versions_json()
-    print(online)
-    print(log)
-    print("ok")
-    select_version(list_versions,online)
+    cprint(online)
+    cprint(log)
+    cprint("ok")
+    selected_version = select_version(list_versions,online)
+    cprint(selected_version)

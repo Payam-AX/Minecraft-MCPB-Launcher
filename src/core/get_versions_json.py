@@ -1,6 +1,4 @@
 import requests, sys, socket
-
-from cli.cprint import cprint
     
 try:
     import json
@@ -66,7 +64,7 @@ def get_json():
     if sys.version_info[0]==3 or (sys.version_info[0] == 2 and sys.version_info[1] == 7):
         urls = https_urls
     else:
-        cprint("fallback to http")
+        log.append("fallback to http")
         urls = http_urls
     i=0
     for url in urls:

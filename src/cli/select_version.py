@@ -51,11 +51,11 @@ def select_version(json_data,online,path_game = "./"):
             cprint("no installed versions detected!")
             return
     elif selected_type.lower() == "latest_release":
-        existing_versions = json_data["latest"]["release"]
+        existing_versions = [json_data["latest"]["release"]]
         filtered_entries = filter_by_type(json_data["versions"], "release")
         cprint(existing_versions)
     elif selected_type.lower() == "latest_snapshot":
-        existing_versions = json_data["latest"]["snapshot"]
+        existing_versions = [json_data["latest"]["snapshot"]]
         filtered_entries = filter_by_type(json_data["versions"], "snapshot")
         cprint(existing_versions)
     else:
@@ -66,8 +66,9 @@ def select_version(json_data,online,path_game = "./"):
         existing_versions = sorted(set(entry["id"] for entry in filtered_entries))
         cprint(existing_versions)
     
+    selected_type1 = ""
     
-    selected_type1 = input("Enter your desired version: ").strip()
-    if selected_type1 not in existing_versions:
-        cprint("Invalid type selected!")
-        return
+    while selected_type1 not in existing_versions:  
+        selected_type1 = input("Enter your desired version: ").strip()
+    
+    return selected_type1
